@@ -1981,7 +1981,7 @@ sections:
               figures when combined with average bale weight.
 
             validation_guidance: |
-              - Must be a whole number between 1 and 100000.
+              - Must be a whole number between 1 and 10000.
               - Represents the total number of bales produced for this hay lot.
               - Typical field lots contain 50 to 5000 bales depending on bale size and acreage.
               - Values above 10000 are common in large-scale operations.
@@ -2003,7 +2003,7 @@ sections:
               should align with the declared units for clarity and consistency.
 
             validation_guidance: |
-              - Must be a positive decimal between 0.1 and 100.0.
+              - Must be a positive decimal between 0.1 and 200.0.
               - Represents the total yield from the source field for this hay lot.
               - Interpretation depends on `source_field_yield_units`.
               - Typical hay yields range from 0.5 to 8.0 tons per acre per cutting.
@@ -2117,7 +2117,7 @@ sections:
               pricing.
 
             validation_guidance: |
-              - Must be a whole number between 20 and 3000.
+              - Must be a whole number between 1 and 3000.
               - Represents the intended weight per bale after repackaging, in the units defined by `bale_weight_units`.
               - This may differ from original bale weights due to resizing or compression for shipping.
               - Typical values follow the same range as original bale weights.
@@ -4273,7 +4273,7 @@ sections:
               (RFQ), which provides a more accurate assessment.
 
             validation_guidance: |
-              - Must be a positive decimal between 75.0 and 240.0.
+              - Must be a positive decimal between 70.0 and 240.0.
               - Relative Feed Value (RFV) is a dimensionless index used to evaluate forage quality based on ADF and NDF.
               - Most hay falls between 100 and 180. Values above 185 indicate very high-quality dairy forage.
 
@@ -5006,7 +5006,7 @@ sections:
               limited rumen degradation time.
 
             validation_guidance: |
-              - Must be a decimal between 0.0 and 4.0.
+              - Must be a decimal between 1.0 and 10.0.
               - NDICP includes both digestible and indigestible fiber-bound protein.
               - Typical hay values range from 0.5% to 1.5%; values above 2.5% suggest maturity, damage, or poor curing.
               - Should be compared with ADICP and crude protein for consistency.
@@ -5221,7 +5221,7 @@ sections:
                   known.
 
                 validation_guidance: |
-                  - Must be a decimal between 0.8 and 0.30.
+                  - Must be a decimal between 0.08 and 0.30.
                   - Value should be equal to `lysine_pct_dm * dry_matter_fraction`, where the dry matter fraction is typically between 0.80 and 0.92.
                   - Values above 1.5% are uncommon on an as-fed basis.
 
@@ -5400,7 +5400,7 @@ sections:
                   may suggest mislabeling or unusual forage types.
 
                 validation_guidance: |
-                  - Must be a decimal between 0.0 and 70.0.
+                  - Must be a decimal between 18.0 and 45.0.
                   - Values outside the typical 20-60% range should be flagged for further review.
                   - Consistent use of DM basis improves comparability between samples.
 
@@ -5427,7 +5427,7 @@ sections:
                   appear lower than dry matter equivalents.
 
                 validation_guidance: |
-                  - Must be a decimal between 0.0 and 70.0.
+                  - Must be a decimal between 15.0 and 37.0.
                   - Value should approximately equal `acid_detergent_fiber_pct_dm * dry_matter_fraction`.
                   - As-fed values above 50% are rare and may suggest very fibrous material or unit conversion issues.
 
@@ -5472,7 +5472,7 @@ sections:
                   indicate more mature or stemmy forage. Reported as % of dry matter (% DM), it is a core metric in forage testing.
 
                 validation_guidance: |
-                  - Must be a decimal between 0.0 and 100.0.
+                  - Must be a decimal between 30.0 and 70.0.
                   - Typical range is 40.0 to 65.0 percent of dry matter.
                   - Use standardized laboratory methods such as NIR or wet chemistry for measurement.
 
@@ -5492,7 +5492,7 @@ sections:
                   reflects the effective fiber concentration as it would be consumed by the animal.
 
                 validation_guidance: |
-                  - Must be a decimal between 0.0 and 100.0.
+                  - Must be a decimal between 25.0 and 58.0.
                   - Will generally be lower than the dry matter value due to dilution by moisture.
                   - Ensure consistency of sampling and moisture correction when reporting both DM and AF values.
 
@@ -5537,7 +5537,7 @@ sections:
                   and energy availability. Forages with lower lignin content are typically more digestible and palatable.
 
                 validation_guidance: |
-                  - Must be a decimal between 0.0 and 100.0.
+                  - Must be a decimal between 2.0 and 12.0.
                   - Typical values for hay range from 2.0 to 8.0 percent of dry matter.
                   - Use wet chemistry or NIR methods for measurement.
 
@@ -5557,7 +5557,7 @@ sections:
                   evaluating total nutrient supply under feeding conditions.
 
                 validation_guidance: |
-                  - Must be a decimal between 0.0 and 100.0.
+                  - Must be a decimal between 1.5 and 10.0.
                   - Typically lower than dry matter values due to dilution by moisture.
                   - Use consistent methodology with DM-based measurements for comparability.
 
@@ -5602,7 +5602,7 @@ sections:
                   structure. Typical sources include simple sugars, starch, and pectin. It is often calculated indirectly from other lab values.
 
                 validation_guidance: |
-                  - Must be a decimal between 0.0 and 100.0.
+                  - Must be a decimal between 10.0 and 35.0.
                   - Values between 15.0 and 35.0 percent of dry matter are typical.
                   - Confirm that calculation is consistent with NRC or lab-specific methodology.
 
@@ -5622,7 +5622,7 @@ sections:
                   animals receive when consuming the forage in its fed form.
 
                 validation_guidance: |
-                  - Must be a decimal between 0.0 and 100.0.
+                  - Must be a decimal between 8.0 and 28.0.
                   - As-fed values will be lower than dry matter values due to dilution by moisture.
                   - Ensure consistency in conversion between dry matter and as-fed values when calculating NFC.
 
@@ -5678,7 +5678,7 @@ sections:
                   balancing rations for energy supply.
 
                 validation_guidance: |
-                  - Must be a decimal between 0.0 and 80.0.
+                  - Must be a decimal between 0.5 and 8.0.
                   - Typical values range from 0.5 to 6.0 percent of dry matter.
                   - Values above 12.0 percent may indicate grain contamination or classification as a silage or cereal forage rather than hay.
 
@@ -5702,7 +5702,7 @@ sections:
                   situations.
 
                 validation_guidance: |
-                  - Must be a decimal between 0.0 and 80.0.
+                  - Must be a decimal between 0.4 and 6.5.
                   - Values are typically lower than dry matter values due to moisture dilution.
                   - Ensure moisture content is accurately known when converting between AF and DM bases.
 
@@ -5759,7 +5759,7 @@ sections:
                   energy yield.
 
                 validation_guidance: |
-                  - Must be a decimal between 0.0 and 50.0.
+                  - Must be a decimal between 3.0 and 25.0.
                   - Typical range is 6.0 to 18.0 percent of dry matter.
                   - Values above 25.0 percent may indicate immature or highly sugar-rich forages or analytical error.
 
@@ -5783,7 +5783,7 @@ sections:
                   considerations.
 
                 validation_guidance: |
-                  - Must be a decimal between 0.0 and 50.0.
+                  - Must be a decimal between 2.5 and 20.0.
                   - As-fed values are typically lower than dry matter values due to moisture dilution.
                   - Ensure consistent sample moisture correction when calculating or reporting WSC.
 
@@ -5854,7 +5854,7 @@ sections:
                   is used in energy calculations such as total digestible nutrients (TDN) and net energy estimates.
 
                 validation_guidance: |
-                  - Must be a decimal between 0.0 and 20.0.
+                  - Must be a decimal between 1.0 and 4.0.
                   - Typical values range from 2.0 to 3.5 percent of dry matter in hay.
                   - Values over 5.0 percent may indicate additives or inclusion of lipid-rich materials.
 
@@ -5874,7 +5874,7 @@ sections:
                   intake under feeding conditions and contributes to dietary energy density.
 
                 validation_guidance: |
-                  - Must be a decimal between 0.0 and 20.0.
+                  - Must be a decimal between 0.8 and 3.2.
                   - As-fed values are typically lower than dry matter values due to moisture content.
                   - Ensure consistency with DM-based values and proper moisture correction.
 
@@ -5920,7 +5920,7 @@ sections:
                   content than crude fat and are often derived by multiplying crude fat by an adjustment factor, typically 0.8.
 
                 validation_guidance: |
-                  - Must be a decimal between 0.0 and 20.0.
+                  - Must be a decimal between 0.8 and 3.5.
                   - Typical range is 1.5 to 3.0 percent of dry matter.
                   - Values over 4.0 percent are rare for hay and may suggest misclassification or contamination.
 
@@ -5940,7 +5940,7 @@ sections:
                   actual fatty acid intake under field conditions.
 
                 validation_guidance: |
-                  - Must be a decimal between 0.0 and 20.0.
+                  - Must be a decimal between 0.6 and 2.8.
                   - As-fed values are generally lower than dry matter values due to moisture dilution.
                   - Ensure conversion from DM to AF is based on accurate moisture content.
 
@@ -5985,7 +5985,7 @@ sections:
                   milk fat depression or reduced fiber digestibility when dietary lipid levels are high.
 
                 validation_guidance: |
-                  - Must be a decimal between 0.0 and 20.0.
+                  - Must be a decimal between 0.3 and 1.5.
                   - Typical values are 0.5 to 3.0 percent of dry matter.
                   - Ensure consistency with lab-reported units; convert g/kg or g/100g to percent if needed.
 
@@ -6005,7 +6005,7 @@ sections:
                   particularly when evaluating total lipid contribution from forage.
 
                 validation_guidance: |
-                  - Must be a decimal between 0.0 and 20.0.
+                  - Must be a decimal between 0.2 and 1.2.
                   - As-fed values will typically be lower than DM values due to moisture content.
                   - Ensure conversion is based on accurately measured dry matter content.
 
@@ -6052,7 +6052,7 @@ sections:
               outcomes such as milk yield or average daily gain.
 
             validation_guidance: |
-              - Must be a decimal between 40.0 and 90.0.
+              - Must be a decimal between 50.0 and 90.0.
               - This field estimates true digestibility of dry matter after 30 hours of in vitro rumen simulation.
               - Typical values range from 55 to 80 percent depending on forage species and maturity.
               - Values below 40 or above 90 percent are rare and may suggest lab or sampling error.
@@ -6076,7 +6076,7 @@ sections:
               CNCPS. Laboratory measurement typically involves rumen fluid incubation or enzymatic digestion protocols.
 
             validation_guidance: |
-              - Must be a decimal between 30.0 and 70.0.
+              - Must be a decimal between 35.0 and 70.0.
               - This field measures the digestible portion of forage fiber after 30 hours of in vitro fermentation.
               - Typical values range from 40 to 60 percent of NDF depending on species and maturity.
               - Values below 30 or above 70 percent are rare and may indicate lab or sampling error.
@@ -6136,7 +6136,7 @@ sections:
                   and energy yield in ruminant nutrition.
 
                 validation_guidance: |
-                  - Must be a decimal between 0.0 and 100.0.
+                  - Must be a decimal between 48.0 and 72.0.
                   - Typical hay values range from 50.0 to 65.0 percent of dry matter.
                   - Values above 70.0 or below 40.0 should prompt verification of sampling or laboratory method.
 
@@ -6160,7 +6160,7 @@ sections:
                   calculations.
 
                 validation_guidance: |
-                  - Must be a decimal between 0.0 and 100.0.
+                  - Must be a decimal between 40.0 and 65.0.
                   - As-fed TDN values will generally be lower than dry matter values due to moisture dilution.
                   - Ensure the moisture content used for conversion is accurately measured or reported.
 
@@ -6183,7 +6183,7 @@ sections:
               equations based on equine digestion. This value is used to formulate horse diets according to class-specific energy needs such as maintenance, growth, lactation, or work.
 
             validation_guidance: |
-              - Must be a decimal between 0.70 and 1.25.
+              - Must be a decimal between 0.8 and 1.2.
               - Horse digestible energy reflects the amount of usable energy per pound of forage dry matter for equine diets.
               - Typical values range from 0.85 to 1.10 Mcal/lb depending on forage type and maturity.
               - Values below 0.70 or above 1.25 Mcal/lb are uncommon and may indicate incorrect TDN estimation or testing error.
@@ -6207,7 +6207,7 @@ sections:
               incubation with rumen fluid or estimated using Near Infrared Reflectance (NIR) calibration methods.
 
             validation_guidance: |
-              - Must be a decimal between 1.0 and 7.0.
+              - Must be a decimal between 1.0 and 6.0.
               - This field estimates the hourly rate of NDF digestion, referred to as "kd".
               - Typical values range from 2.5 to 5.0 percent per hour depending on forage species and maturity.
               - Values below 1.0 or above 7.0 are uncommon and may reflect analytical or sampling issues.
@@ -6289,7 +6289,7 @@ sections:
                   thus the energy available from the forage.
 
                 validation_guidance: |
-                  - Must be a decimal between 0.0 and 30.0.
+                  - Must be a decimal between 4.0 and 16.0.
                   - Typical range is 6.0 to 10.0 percent of dry matter.
                   - Values above 14.0 percent should be reviewed for potential soil contamination.
 
@@ -6313,7 +6313,7 @@ sections:
                   contamination screening.
 
                 validation_guidance: |
-                  - Must be a decimal between 0.0 and 30.0.
+                  - Must be a decimal between 3.0 and 13.0.
                   - As-fed values are typically lower than dry matter values due to moisture dilution.
                   - Ensure accurate moisture data is used for conversion between AF and DM.
 
@@ -6374,7 +6374,7 @@ sections:
                   ensuring proper bone development and metabolic function.
 
                 validation_guidance: |
-                  - Must be a decimal between 0.00 and 3.00.
+                  - Must be a decimal between 0.2 and 1.8.
                   - Values between 0.25 and 0.60 percent are common for grass hay.
                   - Values between 1.20 and 2.00 percent are typical for legume hay.
                   - Values outside these ranges should be reviewed for accuracy.
@@ -6398,7 +6398,7 @@ sections:
                   analysis in practical feeding conditions.
 
                 validation_guidance: |
-                  - Must be a decimal between 0.00 and 3.00.
+                  - Must be a decimal between 0.2 and 1.5.
                   - As-fed values are generally lower than dry matter values due to moisture dilution.
                   - Ensure conversion is based on accurate moisture content to avoid misrepresentation of mineral intake.
 
@@ -6457,7 +6457,7 @@ sections:
                   relation to calcium.
 
                 validation_guidance: |
-                  - Must be a decimal between 0.00 and 1.00.
+                  - Must be a decimal between 0.1 and 0.5.
                   - Typical values range from 0.15 to 0.35 percent of dry matter.
                   - Values below 0.10 or above 0.50 should be reviewed for accuracy or soil deficiency.
 
@@ -6480,7 +6480,7 @@ sections:
                   under feeding conditions.
 
                 validation_guidance: |
-                  - Must be a decimal between 0.00 and 1.00.
+                  - Must be a decimal between 0.1 and 0.4.
                   - As-fed values will typically be lower than dry matter values due to moisture dilution.
                   - Use accurate moisture content when converting between DM and AF bases.
 
@@ -6538,7 +6538,7 @@ sections:
                   electrolytes such as calcium and potassium.
 
                 validation_guidance: |
-                  - Must be a decimal between 0.00 and 1.00.
+                  - Must be a decimal between 0.1 and 0.5.
                   - Typical values range from 0.15 to 0.35 percent of dry matter.
                   - Values below 0.10 or above 0.50 percent should be reviewed for possible laboratory or sampling error.
 
@@ -6561,7 +6561,7 @@ sections:
                   conditions and supports ration balancing in practice.
 
                 validation_guidance: |
-                  - Must be a decimal between 0.00 and 1.00.
+                  - Must be a decimal between 0.1 and 0.4.
                   - As-fed values are generally lower than dry matter values due to moisture dilution.
                   - Ensure accurate moisture content is used when converting between DM and AF.
 
@@ -6624,7 +6624,7 @@ sections:
                   diagnosing and preventing metabolic imbalances in livestock.
 
                 validation_guidance: |
-                  - Must be a decimal between 0.00 and 5.00.
+                  - Must be a decimal between 0.8 and 4.5.
                   - Typical values range from 1.5 to 3.5 percent of dry matter.
                   - Values above 3.5 percent should prompt closer review of mineral interactions and animal risk factors.
 
@@ -6647,7 +6647,7 @@ sections:
                   ration adjustments under field conditions.
 
                 validation_guidance: |
-                  - Must be a decimal between 0.00 and 5.00.
+                  - Must be a decimal between 0.6 and 3.6.
                   - As-fed values are generally lower than dry matter values due to moisture dilution.
                   - Ensure conversion from DM to AF is based on accurate moisture content for proper ration formulation.
 
@@ -6694,7 +6694,7 @@ sections:
                   to support rumen microbial activity and amino acid synthesis, without exceeding safe thresholds for total dietary sulfur.
 
                 validation_guidance: |
-                  - Must be a decimal between 0.00 and 1.00.
+                  - Must be a decimal between 0.1 and 0.4.
                   - Typical range is 0.10 to 0.35 percent of dry matter.
                   - Values over 0.40 percent require careful evaluation of all sulfur inputs (e.g., water, byproducts, mineral mixes).
 
@@ -6714,7 +6714,7 @@ sections:
                   for balancing total sulfur exposure when calculating rations.
 
                 validation_guidance: |
-                  - Must be a decimal between 0.00 and 1.00.
+                  - Must be a decimal between 0.1 and 0.3.
                   - As-fed values are typically lower than dry matter values due to moisture dilution.
                   - Ensure moisture content is measured or estimated accurately to avoid miscalculating total sulfur intake.
 
@@ -6773,7 +6773,7 @@ sections:
                   environmental salinity.
 
                 validation_guidance: |
-                  - Must be a decimal between 0.00 and 1.00.
+                  - Must be a decimal between 0.0 and 0.5.
                   - Values above 0.30 percent of dry matter are uncommon and may indicate saltwater influence or mineral treatment.
 
               - id: sodium_pct_af
@@ -6794,7 +6794,7 @@ sections:
                   dietary sodium intake under typical feeding conditions.
 
                 validation_guidance: |
-                  - Must be a decimal between 0.00 and 1.00.
+                  - Must be a decimal between 0.0 and 0.4.
                   - As-fed values are generally lower than dry matter values due to moisture dilution.
                   - Confirm proper moisture correction when comparing sodium levels across feeds.
 
@@ -6849,7 +6849,7 @@ sections:
                   formulation to reduce the risk of milk fever in dairy cattle.
 
                 validation_guidance: |
-                  - Must be a decimal between 0.00 and 2.00.
+                  - Must be a decimal between 0.1 and 1.2.
                   - Typical values fall between 0.20 and 0.50 percent of dry matter.
                   - Values above 0.60 percent should prompt review for contamination or fertilization history.
 
@@ -6872,7 +6872,7 @@ sections:
                   to calculate DCAD under field conditions.
 
                 validation_guidance: |
-                  - Must be a decimal between 0.00 and 2.00.
+                  - Must be a decimal between 0.1 and 1.0.
                   - As-fed values are generally lower than dry matter values due to moisture dilution.
                   - Ensure moisture content is accurately measured for DM-to-AF conversion.
 
@@ -6929,7 +6929,7 @@ sections:
                   minerals and may result from soil or equipment contamination.
 
                 validation_guidance: |
-                  - Must be a numeric value between 0 and 1000.
+                  - Must be a numeric value between 80 and 1500.
                   - Typical values range from 100 to 500 ppm DM.
                   - Values above 1000 ppm may suppress trace mineral absorption and should be reviewed alongside copper and zinc.
 
@@ -6952,7 +6952,7 @@ sections:
                   dietary mineral interactions.
 
                 validation_guidance: |
-                  - Must be a numeric value between 0 and 1000.
+                  - Must be a numeric value between 60 and 1200.
                   - As-fed values are typically lower than dry matter values due to moisture content.
                   - Ensure consistent moisture correction when calculating from DM values.
 
@@ -7011,7 +7011,7 @@ sections:
                   reproduction, growth, immune function, and hoof health.
 
                 validation_guidance: |
-                  - Must be a decimal between 0 and 500.
+                  - Must be a decimal between 10 and 80.
                   - Typical values range from 20 to 50 ppm DM.
                   - Values below 15 ppm suggest likely need for dietary supplementation.
                   - Values above 100 ppm should be reviewed for accuracy or oversupply.
@@ -7035,7 +7035,7 @@ sections:
                   conditions.
 
                 validation_guidance: |
-                  - Must be a decimal between 0 and 500.
+                  - Must be a decimal between 8 and 65.
                   - As-fed values are typically lower than dry matter values due to dilution by moisture.
                   - Accurate moisture correction is needed to convert between DM and AF values reliably.
 
@@ -7093,7 +7093,7 @@ sections:
                   particularly for breeding and high-performance livestock.
 
                 validation_guidance: |
-                  - Must be a decimal between 0 and 500.
+                  - Must be a decimal between 30 and 300.
                   - Typical values range from 30 to 100 ppm on a dry matter basis.
                   - Values below 20 or above 400 ppm should be reviewed in context of total mineral intake.
 
@@ -7116,7 +7116,7 @@ sections:
                   context of real-world feeding conditions.
 
                 validation_guidance: |
-                  - Must be a decimal between 0 and 500.
+                  - Must be a decimal between 25 and 240.
                   - As-fed values are generally lower than dry matter values due to moisture content.
                   - Use accurate moisture values when converting between DM and AF formats.
 
@@ -7177,7 +7177,7 @@ sections:
                   ruminants, especially when sulfur is also elevated.
 
                 validation_guidance: |
-                  - Must be a decimal between 0.1 and 5.0.
+                  - Must be a decimal between 0.2 and 5.0.
                   - Values above 2.5 ppm warrant review of total dietary copper and sulfur status.
                   - Values above 5.0 ppm are considered antagonistic and require dietary adjustment.
 
@@ -7200,7 +7200,7 @@ sections:
                   interactions under practical feeding conditions.
 
                 validation_guidance: |
-                  - Must be a decimal between 0.1 and 5.0.
+                  - Must be a decimal between 0.2 and 4.0.
                   - As-fed values are generally lower than dry matter values due to dilution.
                   - Ensure accurate DM correction to maintain consistency in molybdenum reporting.
 
@@ -7345,7 +7345,7 @@ sections:
                   goats, and horses.
 
                 validation_guidance: |
-                  - Must be a decimal between 0 and 5.
+                  - Must be a decimal between 0.02 and 0.50.
                   - Values between 0.05 and 0.30 ppm DM are typical.
                   - Values above 2.0 ppm may pose toxicity risks, especially in selenium-accumulator plants.
 
@@ -7368,7 +7368,7 @@ sections:
                   conditions.
 
                 validation_guidance: |
-                  - Must be a decimal between 0 and 5.
+                  - Must be a decimal between 0.02 and 0.40.
                   - As-fed values are typically lower than dry matter values due to moisture dilution.
                   - Use caution in interpreting high values, and confirm with regional regulatory thresholds for maximum selenium intake.
 
@@ -7425,7 +7425,7 @@ sections:
                   growing or breeding ruminants.
 
                 validation_guidance: |
-                  - Must be a decimal between 0 and 10.
+                  - Must be a decimal between 0.05 and 1.00.
                   - Values below 0.10 ppm DM may be considered deficient.
                   - Values between 0.05 and 0.30 ppm DM are typical.
 
@@ -7447,7 +7447,7 @@ sections:
                   under feeding conditions.
 
                 validation_guidance: |
-                  - Must be a decimal between 0 and 10.
+                  - Must be a decimal between 0.04 and 0.80.
                   - As-fed values are usually lower than dry matter values.
                   - Ensure sufficient cobalt is supplied across the total ration to support microbial vitamin B12 synthesis.
 

@@ -1,0 +1,1124 @@
+# Static Fields from Hay Specification
+# Generated from hay-spec.yaml
+# Contains all fields that have a data_type (deduplicated)
+# Duplicates with uniform data_type are consolidated
+# Duplicates with mixed data_types are split by type
+
+fields:
+  - id: hay_origin
+    data_type: object
+    valueId: 1
+
+  - id: country_code
+    data_type: enum
+    valueId: 2
+
+  - id: subdivision_code
+    data_type: enum
+    valueId: 3
+
+  - id: county_code
+    data_type: enum
+    valueId: 4
+
+  - id: county_code_other
+    data_type: string
+    valueId: 5
+
+  - id: postal_code
+    data_type: string
+    valueId: 6
+
+  - id: field_name
+    data_type: string
+    valueId: 7
+
+  - id: field_id
+    data_type: string
+    valueId: 8
+
+  - id: elevation
+    data_type: object
+    valueId: 9
+
+  - id: magnitude_int
+    data_type: int
+    valueId: 10
+
+  - id: units
+    data_type: enum
+    valueId: 11
+
+  - id: climate_classification
+    data_type: enum
+    valueId: 12
+
+  - id: field_area
+    data_type: object
+    valueId: 13
+
+  - id: magnitude_float
+    data_type: float
+    valueId: 14
+
+  - id: irrigation_status
+    data_type: enum
+    valueId: 15
+
+  - id: irrigation_methods_available
+    data_type: enum
+    valueId: 16
+
+  - id: irrigation_method_used
+    data_type: enum
+    valueId: 17
+
+  - id: soil_test_date
+    data_type: date
+    valueId: 18
+
+  - id: soil_test_ph
+    data_type: float
+    valueId: 19
+
+  - id: soil_liming
+    data_type: object
+    valueId: 20
+
+  - id: lime_application_date
+    data_type: date
+    valueId: 21
+
+  - id: fertilizer_application
+    data_type: object[]
+    valueId: 22
+
+  - id: application_date
+    data_type: date
+    valueId: 23
+
+  - id: nutrient_type
+    data_type: enum
+    valueId: 24
+
+  - id: amount
+    data_type: float
+    valueId: 25
+
+  - id: unit_area
+    data_type: enum
+    valueId: 26
+
+  - id: organic_amendments
+    data_type: object[]
+    valueId: 27
+
+  - id: amendment_application_date
+    data_type: date
+    valueId: 28
+
+  - id: amendment_type
+    data_type: enum
+    valueId: 29
+
+  - id: amendment_amount
+    data_type: float
+    valueId: 30
+
+  - id: unit_mass
+    data_type: enum
+    valueId: 31
+
+  - id: unit_volume
+    data_type: enum
+    valueId: 32
+
+  - id: stand_mixture_intended
+    data_type: boolean
+    valueId: 33
+
+  - id: forage_type_classification
+    data_type: enum
+    valueId: 34
+
+  - id: forage_variety_count
+    data_type: int
+    valueId: 35
+
+  - id: forage_variety_components
+    data_type: object[]
+    valueId: 36
+
+  - id: forage_variety
+    data_type: enum
+    valueId: 37
+
+  - id: variety_representation_target
+    data_type: int
+    valueId: 38
+
+  - id: variety_representation_result
+    data_type: float
+    valueId: 39
+
+  - id: stand_maturity_at_harvest
+    data_type: enum
+    valueId: 40
+
+  - id: stand_establishment
+    data_type: object
+    valueId: 41
+
+  - id: method
+    data_type: enum
+    valueId: 42
+
+  - id: date
+    data_type: date
+    valueId: 43
+
+  - id: stand_density
+    data_type: enum
+    valueId: 44
+
+  - id: source_stand_age
+    data_type: float
+    valueId: 45
+
+  - id: growth_conditions_notes
+    data_type: string
+    valueId: 46
+
+  - id: weed_pressure_observed
+    data_type: enum
+    valueId: 47
+
+  - id: glyphosate_application_status
+    data_type: enum
+    valueId: 48
+
+  - id: pest_pressure_observed
+    data_type: enum
+    valueId: 49
+
+  - id: expected_cuttings_per_season
+    data_type: int
+    valueId: 50
+
+  - id: cutting_stage_intended
+    data_type: enum
+    valueId: 51
+
+  - id: harvest_duration
+    data_type: object
+    valueId: 52
+
+  - id: harvest_start_datetime
+    data_type: datetime
+    valueId: 53
+
+  - id: harvest_end_datetime
+    data_type: datetime
+    valueId: 54
+
+  - id: hay_cutting
+    data_type: int
+    valueId: 55
+
+  - id: baler_moisture_average
+    data_type: float
+    valueId: 56
+
+  - id: baler_moisture_high
+    data_type: float
+    valueId: 57
+
+  - id: bale_weight
+    data_type: object
+    valueId: 58
+
+  - id: bale_weight_intended
+    data_type: int
+    valueId: 59
+
+  - id: bale_weight_average
+    data_type: int
+    valueId: 60
+
+  - id: bale_weight_units
+    data_type: enum
+    valueId: 61
+
+  - id: bale_weight_assessment_method
+    data_type: enum
+    valueId: 62
+
+  - id: source_field_yield
+    data_type: object
+    valueId: 63
+
+  - id: source_field_bale_count
+    data_type: int
+    valueId: 64
+
+  - id: source_field_yield_weight
+    data_type: float
+    valueId: 65
+
+  - id: source_field_yield_units
+    data_type: enum
+    valueId: 66
+
+  - id: hay_packaging_history
+    data_type: enum
+    valueId: 67
+
+  - id: repackaged_bale_weights
+    data_type: object
+    valueId: 68
+
+  - id: weight
+    data_type: float
+    valueId: 69
+
+  - id: bale_weight_units_repackaged
+    data_type: enum
+    valueId: 70
+
+  - id: bale_binding_material
+    data_type: enum
+    valueId: 71
+
+  - id: bale_format_descriptor
+    data_type: enum
+    valueId: 72
+
+  - id: hay_compression
+    data_type: enum
+    valueId: 73
+
+  - id: bale_shape
+    data_type: enum
+    valueId: 74
+
+  - id: bale_dimensions
+    data_type: object
+    valueId: 75
+
+  - id: width_float
+    data_type: float
+    valueId: 76
+
+  - id: height_float
+    data_type: float
+    valueId: 77
+
+  - id: length_float
+    data_type: float
+    valueId: 78
+
+  - id: diameter
+    data_type: float
+    valueId: 79
+
+  - id: bale_dimension_axis
+    data_type: float
+    valueId: 80
+
+  - id: bale_dimension_units
+    data_type: enum
+    valueId: 81
+
+  - id: unitization
+    data_type: "object[]"
+    valueId: 82
+
+  - id: unitization_method
+    data_type: enum
+    valueId: 83
+
+  - id: bales_per_bundle
+    data_type: int
+    valueId: 84
+
+  - id: bundles_per_pallet
+    data_type: int
+    valueId: 85
+
+  - id: bales_per_pallet
+    data_type: int
+    valueId: 86
+
+  - id: pallet_contents
+    data_type: enum
+    valueId: 87
+
+  - id: unit_label
+    data_type: string
+    valueId: 88
+
+  - id: unit_weight
+    data_type: object
+    valueId: 89
+
+  - id: unit_dimensions
+    data_type: object
+    valueId: 90
+
+  - id: length_int
+    data_type: int
+    valueId: 91
+
+  - id: width_int
+    data_type: int
+    valueId: 92
+
+  - id: height_int
+    data_type: int
+    valueId: 93
+
+  - id: securement
+    data_type: object
+    valueId: 94
+
+  - id: material_details
+    data_type: string
+    valueId: 95
+
+  - id: pallet_specs
+    data_type: object
+    valueId: 96
+
+  - id: pallet_type
+    data_type: enum
+    valueId: 97
+
+  - id: pallet_mass
+    data_type: object
+    valueId: 98
+
+  - id: hay_single_lot_traceable
+    data_type: boolean
+    valueId: 99
+
+  - id: lot_identifiers
+    data_type: object
+    valueId: 100
+
+  - id: lot_identifier_internal
+    data_type: string
+    valueId: 101
+
+  - id: lot_identifier_external
+    data_type: object
+    valueId: 102
+
+  - id: lot_identifier_external_value
+    data_type: string
+    valueId: 103
+
+  - id: lot_identifier_external_issuer
+    data_type: string
+    valueId: 104
+
+  - id: lot_mapping_field_to_bale_supported
+    data_type: boolean
+    valueId: 105
+
+  - id: weather_damage_windrow
+    data_type: object
+    valueId: 106
+
+  - id: weather_damage_windrow_assessment
+    data_type: enum
+    valueId: 107
+
+  - id: weather_damage_baled
+    data_type: object
+    valueId: 108
+
+  - id: weather_damage_baled_assessment
+    data_type: enum
+    valueId: 109
+
+  - id: hay_leafiness
+    data_type: enum
+    valueId: 110
+
+  - id: hay_texture
+    data_type: enum
+    valueId: 111
+
+  - id: hay_color
+    data_type: enum
+    valueId: 112
+
+  - id: weed_content
+    data_type: object
+    valueId: 113
+
+  - id: weed_free_certification_status
+    data_type: object
+    valueId: 114
+
+  - id: weed_free_certified
+    data_type: boolean
+    valueId: 115
+
+  - id: certifying_authority
+    data_type: enum
+    valueId: 116
+
+  - id: certificate_id
+    data_type: string
+    valueId: 117
+
+  - id: weed_content_estimate
+    data_type: enum
+    valueId: 118
+
+  - id: weeds_present
+    data_type: object[]
+    valueId: 119
+
+  - id: weed_species_present
+    data_type: enum
+    valueId: 120
+
+  - id: toxic_plants_present
+    data_type: boolean
+    valueId: 121
+
+  - id: burrs_awns_present
+    data_type: boolean
+    valueId: 122
+
+  - id: insects_present
+    data_type: boolean
+    valueId: 123
+
+  - id: organoleptic_factors
+    data_type: object
+    valueId: 124
+
+  - id: organoleptic_factor_odor
+    data_type: enum
+    valueId: 125
+
+  - id: organoleptic_factor_rot
+    data_type: enum
+    valueId: 126
+
+  - id: handling_sequence
+    data_type: object[]
+    valueId: 127
+
+  - id: stage_label
+    data_type: enum
+    valueId: 128
+
+  - id: location_type
+    data_type: enum
+    valueId: 129
+
+  - id: duration_estimate
+    data_type: string
+    valueId: 130
+
+  - id: storage_structure
+    data_type: enum
+    valueId: 131
+
+  - id: surface_type
+    data_type: enum
+    valueId: 132
+
+  - id: airflow_condition
+    data_type: enum
+    valueId: 133
+
+  - id: restacked
+    data_type: boolean
+    valueId: 134
+
+  - id: storage_degradation_visible
+    data_type: enum
+    valueId: 135
+
+  - id: hay_sample_date
+    data_type: date
+    valueId: 136
+
+  - id: hay_sampling_protocol
+    data_type: enum
+    valueId: 137
+
+  - id: forage_testing_laboratory
+    data_type: enum
+    valueId: 138
+
+  - id: hay_testing_method
+    data_type: enum
+    valueId: 139
+
+  - id: hay_testing_date
+    data_type: date
+    valueId: 140
+
+  - id: lab_sample_id
+    data_type: string
+    valueId: 141
+
+  - id: lab_report_reference
+    data_type: string
+    valueId: 142
+
+  - id: lab_processing_notes
+    data_type: string
+    valueId: 143
+
+  - id: lab_processing_completed_date
+    data_type: date
+    valueId: 144
+
+  - id: lab_quality_code
+    data_type: string
+    valueId: 145
+
+  - id: moisture_content
+    data_type: float
+    valueId: 146
+
+  - id: dry_matter
+    data_type: float
+    valueId: 147
+
+  - id: relative_feed_value
+    data_type: float
+    valueId: 148
+
+  - id: relative_forage_quality
+    data_type: float
+    valueId: 149
+
+  - id: digestible_energy_1x_mcal_per_lb
+    data_type: float
+    valueId: 150
+
+  - id: metabolizable_energy_1x_mcal_per_lb
+    data_type: float
+    valueId: 151
+
+  - id: net_energy_lactation_3x_mcal_per_lb
+    data_type: float
+    valueId: 152
+
+  - id: net_energy_maintenance_3x_mcal_per_lb
+    data_type: float
+    valueId: 153
+
+  - id: net_energy_gain_3x_mcal_per_lb
+    data_type: float
+    valueId: 154
+
+  - id: digestible_energy_1x_mcal_per_kg
+    data_type: float
+    valueId: 155
+
+  - id: metabolizable_energy_1x_mcal_per_kg
+    data_type: float
+    valueId: 156
+
+  - id: net_energy_lactation_3x_mcal_per_kg
+    data_type: float
+    valueId: 157
+
+  - id: net_energy_maintenance_3x_mcal_per_kg
+    data_type: float
+    valueId: 158
+
+  - id: net_energy_gain_3x_mcal_per_kg
+    data_type: float
+    valueId: 159
+
+  - id: tdn_1x
+    data_type: float
+    valueId: 160
+
+  - id: crude_protein
+    data_type: object
+    valueId: 161
+
+  - id: crude_protein_pct_dm
+    data_type: float
+    valueId: 162
+
+  - id: crude_protein_pct_af
+    data_type: float
+    valueId: 163
+
+  - id: available_protein
+    data_type: object
+    valueId: 164
+
+  - id: available_protein_pct_dm
+    data_type: float
+    valueId: 165
+
+  - id: available_protein_pct_af
+    data_type: float
+    valueId: 166
+
+  - id: acid_detergent_insoluble_crude_protein
+    data_type: object
+    valueId: 167
+
+  - id: acid_detergent_insoluble_crude_protein_pct_dm
+    data_type: float
+    valueId: 168
+
+  - id: acid_detergent_insoluble_crude_protein_pct_af
+    data_type: float
+    valueId: 169
+
+  - id: adjusted_crude_protein
+    data_type: object
+    valueId: 170
+
+  - id: adjusted_crude_protein_pct_dm
+    data_type: float
+    valueId: 171
+
+  - id: adjusted_crude_protein_pct_af
+    data_type: float
+    valueId: 172
+
+  - id: neutral_detergent_insoluble_crude_protein
+    data_type: object
+    valueId: 173
+
+  - id: neutral_detergent_insoluble_crude_protein_pct_dm
+    data_type: float
+    valueId: 174
+
+  - id: neutral_detergent_insoluble_crude_protein_pct_af
+    data_type: float
+    valueId: 175
+
+  - id: soluble_protein_pct_cp
+    data_type: float
+    valueId: 176
+
+  - id: degradable_protein_pct_cp
+    data_type: float
+    valueId: 177
+
+  - id: lysine
+    data_type: object
+    valueId: 178
+
+  - id: lysine_pct_dm
+    data_type: float
+    valueId: 179
+
+  - id: lysine_pct_af
+    data_type: float
+    valueId: 180
+
+  - id: methionine
+    data_type: object
+    valueId: 181
+
+  - id: methionine_pct_dm
+    data_type: float
+    valueId: 182
+
+  - id: methionine_pct_af
+    data_type: float
+    valueId: 183
+
+  - id: acid_detergent_fiber
+    data_type: object
+    valueId: 184
+
+  - id: acid_detergent_fiber_pct_dm
+    data_type: float
+    valueId: 185
+
+  - id: acid_detergent_fiber_pct_af
+    data_type: float
+    valueId: 186
+
+  - id: neutral_detergent_fiber
+    data_type: object
+    valueId: 187
+
+  - id: neutral_detergent_fiber_pct_dm
+    data_type: float
+    valueId: 188
+
+  - id: neutral_detergent_fiber_pct_af
+    data_type: float
+    valueId: 189
+
+  - id: lignin
+    data_type: object
+    valueId: 190
+
+  - id: lignin_pct_dm
+    data_type: float
+    valueId: 191
+
+  - id: lignin_pct_af
+    data_type: float
+    valueId: 192
+
+  - id: non_fiber_carbohydrates
+    data_type: object
+    valueId: 193
+
+  - id: non_fiber_carbohydrates_pct_dm
+    data_type: float
+    valueId: 194
+
+  - id: non_fiber_carbohydrates_pct_af
+    data_type: float
+    valueId: 195
+
+  - id: starch
+    data_type: object
+    valueId: 196
+
+  - id: starch_pct_dm
+    data_type: float
+    valueId: 197
+
+  - id: starch_pct_af
+    data_type: float
+    valueId: 198
+
+  - id: water_soluble_carbohydrates
+    data_type: object
+    valueId: 199
+
+  - id: water_soluble_carbohydrates_pct_dm
+    data_type: float
+    valueId: 200
+
+  - id: water_soluble_carbohydrates_pct_af
+    data_type: float
+    valueId: 201
+
+  - id: crude_fat
+    data_type: object
+    valueId: 202
+
+  - id: crude_fat_pct_dm
+    data_type: float
+    valueId: 203
+
+  - id: crude_fat_pct_af
+    data_type: float
+    valueId: 204
+
+  - id: total_fatty_acids
+    data_type: object
+    valueId: 205
+
+  - id: total_fatty_acids_pct_dm
+    data_type: float
+    valueId: 206
+
+  - id: total_fatty_acids_pct_af
+    data_type: float
+    valueId: 207
+
+  - id: rumen_unsaturated_fatty_acid_load
+    data_type: object
+    valueId: 208
+
+  - id: rumen_unsaturated_fatty_acid_load_pct_dm
+    data_type: float
+    valueId: 209
+
+  - id: rumen_unsaturated_fatty_acid_load_pct_af
+    data_type: float
+    valueId: 210
+
+  - id: in_vitro_true_digestibility_30hr_percent_dm
+    data_type: float
+    valueId: 211
+
+  - id: neutral_detergent_fiber_digestibility_30hr_percent_ndf
+    data_type: float
+    valueId: 212
+
+  - id: total_digestible_nutrients
+    data_type: object
+    valueId: 213
+
+  - id: total_digestible_nutrients_pct_dm
+    data_type: float
+    valueId: 214
+
+  - id: total_digestible_nutrients_pct_af
+    data_type: float
+    valueId: 215
+
+  - id: horse_digestible_energy_mcal_per_lb
+    data_type: float
+    valueId: 216
+
+  - id: kd_percent_per_hr
+    data_type: float
+    valueId: 217
+
+  - id: ash
+    data_type: object
+    valueId: 218
+
+  - id: ash_pct_dm
+    data_type: float
+    valueId: 219
+
+  - id: ash_pct_af
+    data_type: float
+    valueId: 220
+
+  - id: calcium
+    data_type: object
+    valueId: 221
+
+  - id: calcium_pct_dm
+    data_type: float
+    valueId: 222
+
+  - id: calcium_pct_af
+    data_type: float
+    valueId: 223
+
+  - id: phosphorus
+    data_type: object
+    valueId: 224
+
+  - id: phosphorus_pct_dm
+    data_type: float
+    valueId: 225
+
+  - id: phosphorus_pct_af
+    data_type: float
+    valueId: 226
+
+  - id: magnesium
+    data_type: object
+    valueId: 227
+
+  - id: magnesium_pct_dm
+    data_type: float
+    valueId: 228
+
+  - id: magnesium_pct_af
+    data_type: float
+    valueId: 229
+
+  - id: potassium
+    data_type: object
+    valueId: 230
+
+  - id: potassium_pct_dm
+    data_type: float
+    valueId: 231
+
+  - id: potassium_pct_af
+    data_type: float
+    valueId: 232
+
+  - id: sulfur
+    data_type: object
+    valueId: 233
+
+  - id: sulfur_pct_dm
+    data_type: float
+    valueId: 234
+
+  - id: sulfur_pct_af
+    data_type: float
+    valueId: 235
+
+  - id: sodium
+    data_type: object
+    valueId: 236
+
+  - id: sodium_pct_dm
+    data_type: float
+    valueId: 237
+
+  - id: sodium_pct_af
+    data_type: float
+    valueId: 238
+
+  - id: chloride_ion
+    data_type: object
+    valueId: 239
+
+  - id: chloride_pct_dm
+    data_type: float
+    valueId: 240
+
+  - id: chloride_pct_af
+    data_type: float
+    valueId: 241
+
+  - id: iron
+    data_type: object
+    valueId: 242
+
+  - id: iron_ppm_dm
+    data_type: float
+    valueId: 243
+
+  - id: iron_ppm_af
+    data_type: float
+    valueId: 244
+
+  - id: zinc
+    data_type: object
+    valueId: 245
+
+  - id: zinc_ppm_dm
+    data_type: float
+    valueId: 246
+
+  - id: zinc_ppm_af
+    data_type: float
+    valueId: 247
+
+  - id: manganese
+    data_type: object
+    valueId: 248
+
+  - id: manganese_ppm_dm
+    data_type: float
+    valueId: 249
+
+  - id: manganese_ppm_af
+    data_type: float
+    valueId: 250
+
+  - id: molybdenum
+    data_type: object
+    valueId: 251
+
+  - id: molybdenum_ppm_dm
+    data_type: float
+    valueId: 252
+
+  - id: molybdenum_ppm_af
+    data_type: float
+    valueId: 253
+
+  - id: copper
+    data_type: object
+    valueId: 254
+
+  - id: copper_ppm_dm
+    data_type: float
+    valueId: 255
+
+  - id: copper_ppm_af
+    data_type: float
+    valueId: 256
+
+  - id: selenium
+    data_type: object
+    valueId: 257
+
+  - id: selenium_ppm_dm
+    data_type: float
+    valueId: 258
+
+  - id: selenium_ppm_af
+    data_type: float
+    valueId: 259
+
+  - id: cobalt
+    data_type: object
+    valueId: 260
+
+  - id: cobalt_ppm_dm
+    data_type: float
+    valueId: 261
+
+  - id: cobalt_ppm_af
+    data_type: float
+    valueId: 262
+
+  - id: intended_forage_use
+    data_type: enum
+    valueId: 263
+
+  - id: intended_use_case
+    data_type: enum
+    valueId: 264
+
+  - id: gmo_presence_status
+    data_type: enum
+    valueId: 265
+
+  - id: production_certification_status
+    data_type: enum
+    valueId: 266
+
+  - id: distribution_channel
+    data_type: enum
+    valueId: 267
+
+  - id: export_eligibility_documentation
+    data_type: enum
+    valueId: 268
+
+  - id: spec_name
+    data_type: string
+    valueId: 269
+
+  - id: version
+    data_type: string
+    valueId: 270
+
+  - id: date_published
+    data_type: date
+    valueId: 271
+
+  - id: status
+    data_type: string
+    valueId: 272
+
+  - id: license
+    data_type: string
+    valueId: 273
+
+  - id: publisher
+    data_type: string
+    valueId: 274
+
+  - id: schema_uri
+    data_type: string
+    valueId: 275
+
+  - id: contributors
+    data_type: "string[]"
+    valueId: 276
+
+  - id: unit_system_preference
+    data_type: enum
+    valueId: 277
+
+  - id: references
+    data_type: "string[]"
+    valueId: 278
+
+  - id: release_notes
+    data_type: string
+    valueId: 279
+
+# Total fields: 279

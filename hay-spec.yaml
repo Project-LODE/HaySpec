@@ -336,7 +336,7 @@ sections:
             required: true
 
             fields:
-              - id: magnitude
+              - id: magnitude_int
                 title: Magnitude
                 data_type: int
                 required: true
@@ -423,7 +423,7 @@ sections:
             required: false
 
             fields:
-              - id: magnitude
+              - id: magnitude_float
                 title: Magnitude
                 data_type: float
                 required: false
@@ -2250,7 +2250,7 @@ sections:
         required: false
 
         components:
-          - id: width
+          - id: width_float
             title: Width
             data_type: float
             required: false
@@ -2276,7 +2276,7 @@ sections:
               - Typical width values for small rectangular bales range from 14 to 18 inches (36 to 46 cm); large bales may range from 32 to 48 inches (81 to 122 cm).
               - For round bales, this field should be left blank or omitted.
 
-          - id: height
+          - id: height_float
             title: Height
             data_type: float
             required: false
@@ -2301,7 +2301,7 @@ sections:
               - Typical height values for small bales range from 14 to 18 inches (36 to 46 cm); large bales may be taller.
               - For round bales, this field should be left blank or omitted.
 
-          - id: length
+          - id: length_float
             title: Length
             data_type: float
             required: false
@@ -2524,7 +2524,7 @@ sections:
             data_type: object
             required: false
             fields:
-              - id: magnitude
+              - id: magnitude_int
                 title: Magnitude
                 data_type: int
                 required: true
@@ -2557,19 +2557,19 @@ sections:
             required: false
             fields:
 
-              - id: length
+              - id: length_int
                 title: Length
                 data_type: int
                 required: true
                 valid_range: { min: 10, max: 400 }   # typical inches or cm ranges
-              - id: width
+              - id: width_int
 
                 title: Width
                 data_type: int
                 required: true
                 valid_range: { min: 10, max: 200 }
 
-              - id: height
+              - id: height_int
                 title: Height
                 data_type: int
                 required: true
@@ -2646,7 +2646,7 @@ sections:
                 data_type: object
                 required: false
                 fields:
-                  - id: magnitude
+                  - id: magnitude_int
                     title: Magnitude
                     data_type: int
                     required: true
